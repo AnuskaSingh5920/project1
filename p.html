@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website </title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header design -->
+    <div class="header" id="initial">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Anuska Singh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am a full-stack developer with knowledge of front-end and backend web development,responsive framework
+                and databases.My objective is simply to be
+                best in the field of web development for which i have been dedicated to perfecting and polishing by
+                learning from seasoned developers,being humble and consistently
+                making strides to learn that i can do about web development.
+            </p>
+            <div class="social-media">
+                <p><i class='bx bx-send'></i>anuskasingh080@gmail.com</p>
+                <p><i class='bx bxs-phone'></i>8249176534</p>
+                <a
+                    href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=user_system_sheet&utm_content=p31uf7d"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/anuska-singh-6b5306210"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://telegram.org/dl"><i class='bx bxl-telegram'></i></a>
+
+            </div>
+            <a href="CV.pdf" class="btn">Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="img/pic.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/pic.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Full-Stack Developer</h3>
+            <p>Expertise in area of front-end [html,css,javascript] Backend [Nodejs,Xampp,Expressjs]
+                Database[MongoDb,MySQL] Framework[Pug,Bootstrap]
+                Responsive[Media query Concept] Editor[VS Code & Notepad]. Moreover my skills,education and
+                miscellaneous
+                have been mentioned separately.Further It's A Dynamic Website.Hence Looking Forward To Add About The
+                Open-Source Contribution And User-Friendly Website Deployment In Near Future. </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('miscellaneous')">Miscellaneous</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul type="none">
+                    <li><span>Full-Stack Development</span><br>Microsoft Office</li>
+                    <li><span>Data Structures & Algorithm</span><br>C++</li>
+                    <li><span>Core Java</span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul type="none">
+                    <li><span>2022</span><br>B.SC In Computer Science Honours - 86%</li>
+                    <li><span>2017</span><br>12th Science - 74%</li>
+                    <li><span>2016</span><br>10th General -91.2%</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="miscellaneous">
+                <ul type="none">
+                    <li><span>Dedicated & Determined Person</span><br>Time Management</li>
+                    <li><span>Target Oriented </span><br>Communication Skill</li>
+                    <li><span>Blogging</span><br>Photoshop<br><span>Singing</span></li>
+                </ul>
+            </div>
+            <a href="Certifications/Certifications.pdf" class="btn">Certifications</a>
+            <!-- <a href="Certifications/Certifications.pdf" class="btn">Certifications</a> -->
+
+
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box" id="box1">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p> Web development refers to the functionality of a website.It includes
+                <ul>
+                    <li><span>Front-end web development</span></li>
+                    <li><span>Back-end web development</span></li>
+                    <li><span> Full-stack web development</span></li>
+
+                </ul>
+                </p>
+                <a href="https://www.interviewbit.com/blog/web-development-projects/" class="btn">Read More</a>
+
+            </div>
+            <div class="services-box" id="box2">
+                <i class='bx bx-store-alt'></i>
+                <h3>Freelancing</h3>
+                <p>Freelancing is working for a client under a fixed contract to do a task or project before moving to
+                    the next.Freelance skills includes</p>
+                <ul>
+                    <li><span>Content-Writing</span></li>
+                    <li><span>Marketing</span></li>
+                    <li><span>Consulting</span></li>
+
+                </ul>
+                <a href="https://emeritus.org/blog/career-freelance-skills/" class="btn">Read More</a>
+            </div>
+            <div class="services-box" id="box3">
+                <i class='bx bxl-aws'></i>
+                <h3>Cloud-Computing</h3>
+                <p>Cloud computing is the on-demand availability of computing resources (such as storage and
+                    infrastructure), as services over the internet.Cloud services includes</p>
+                <ul>
+                    <li><span>Google Cloud</span></li>
+                    <li><span>Amazon Web Services (AWS)</span></li>
+                    <li><span>Microsoft Azure</span></li>
+                </ul>
+                <a href="https://www.interviewbit.com/cloud-computing-interview-questions/" class="btn">Read More</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Handwritten Notes</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/ds.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>DS</h4>
+                    <p></p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+            <!-- <a href="#" class="btn">Download Pdf</a> -->
+
+            <div class="portfolio-box">
+                <img src="img/os.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>OS</h4>
+                    <p></p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+
+
+            </div>
+            <!-- <a href="#" class="btn">Download Pdf</a> -->
+
+            <div class="portfolio-box">
+                <img src="img/java1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>JAVA</h4>
+                    <p></p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container" id="btn1">
+            <a href="DS Notes.pdf" class="btn">Download DS Pdf</a>
+        </div>
+        <div class="btn-container" id="btn2">
+            <a href="OS Notes.pdf" class="btn">Download OS Pdf</a>
+        </div>
+        <div class="btn-container" id="btn3">
+            <a href="JAVA Notes.pdf" class="btn">Download Java Pdf</a>
+        </div>
+        <div class="btn-container" id="btn4">
+            <a href="Iits Notes.pdf" class="btn">For IITS Pdf Click Here</a>
+        </div>
+
+
+        <!-- project html -->
+        <section class="project" id="project">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <h3>Ideas Based on SDLC</h3>
+            <div class="bt-container">
+                <div class="bt-box" id="bx1">
+                    <!-- <img src="img/pic1.jpg" alt=""> -->
+                    <!-- <i class='bx bx-code-alt'></i> -->
+                    <h3>Project Planning And Development</h3>
+                    <ul type="none">
+                        <li><span>Sap</span></li>
+                        <li><span>Jira</span></li>
+                        <li><span>Bitbucket</span></li>
+
+                    </ul>
+                    <!-- </p> -->
+                    <a href="https://www.coursera.org/articles/project-management-methodologies-your-guide"
+                        class="btn">Read More</a>
+
+                </div>
+                <div class="bt-box" id="bx2">
+                    <!-- <img src="img/pic1.jpg" alt=""> -->
+                    <!-- <i class='bx bx-code-alt'></i> -->
+                    <h3>Automation And Testing</h3>
+                    <!-- <p>It is the important stage of sdlc therefore to study it in depth one can prefer courses based
+                            on its tools like</p> -->
+                    <ul type="none">
+                        <li><span>Selenium</span></li>
+                        <li><span>Appium</span></li>
+                        <li><span>TestNG Listerner</span></li>
+                        <li><span>Maven</span></li>
+                        <li><span>Mocha</span></li>
+
+
+                    </ul>
+                    </p>
+                    <a href="https://intellipaat.com/blog/what-is-automation-testing/" class="btn">Read More</a>
+
+                </div>
+
+                <div class="bt-box" id="bx3">
+                    <!-- <img src="img/pic1.jpg" alt=""> -->
+                    <!-- <i class='bx bx-code-alt'></i> -->
+                    <h3>Deployment</h3>
+                    <!-- <p>It is the important stage of sdlc therefore to study it in depth one  can prefer courses based on its tools like</p>            -->
+                    <ul type="none">
+                        <li><span>Atlassian Bamboo</span></li>
+                        <li><span>AWS Code Deploy</span></li>
+                        <li><span>Google Cloud Deployment Manager</span></li>
+                        <li><span>GitLab CI/CD</span></li>
+
+
+                    </ul>
+                    <a href="https://www.knowledgehut.com/blog/devops/devops-deployment-tools" class="btn">Read More</a>
+
+                </div>
+                <div class="bt-box" id="bx4">
+                    <!-- <img src="img/pic1.jpg" alt=""> -->
+                    <!-- <i class='bx bx-code-alt'></i> -->
+                    <h3>Maintenace</h3>
+                    <!-- <p>It is the important stage of sdlc therefore to study it in depth one  can prefer courses based on its tools like</p>            -->
+                    <ul type="none">
+                        <li><span>Correct faults</span></li>
+                        <li><span>Improve the design</span></li>
+                        <li><span>Implement enhancements </span></li>
+                        <li><span>Requirement of user changes.</span></li>
+
+
+                    </ul>
+                    <a href="https://www.geeksforgeeks.org/software-engineering-software-maintenance/" class="btn">Read
+                        More</a>
+
+                </div>
+                <a href="https://www.atlassian.com/software-development" class="aqua">To Know More About SDLC Click
+                    Here</a>
+            </div>
+            <a href="https://www.coursera.org/specializations/software-development-lifecycle" class="aqua">For SDLC
+                Course Tab This Link</a>
+            </div>
+        </section>
+        <!-- Contact section design -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span>Me!</span></h2>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </form>
+        </section>
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright @copy; 2023 | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- typed js -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- custom js -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzZbdzVNB9am2XsEZ3WE-PiAyh0wpPreejw_wjaWGtyHG1NEiNPIO1FBdRHWS3a05r8iw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+</body>
+
+</html>
